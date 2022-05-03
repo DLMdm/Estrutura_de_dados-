@@ -23,4 +23,10 @@ public class PontoCartesiano {
 	public void setY(int y) {
 		this.y = y;
 	}
+	
+	public static double calcula(PontoCartesiano p1, PontoCartesiano p2) {
+		double result = 0;
+		result = Math.sqrt((p1.getX()- p2.getY()) + (p1.getY()-p2.getY()));
+		return result;
+	}
 }
