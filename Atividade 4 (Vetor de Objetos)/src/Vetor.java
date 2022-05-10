@@ -69,5 +69,11 @@ public class Vetor implements IVetor {
 			this.objetos = newVet;
 		}
 	}
+	
+	public void exibe() {
+		for(int i = 0; i < ultVal; i++) {
+		System.out.println(objetos[i].toString());
+		}
+	}
 
 }

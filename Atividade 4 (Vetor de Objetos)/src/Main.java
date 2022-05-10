@@ -15,6 +15,7 @@ public class Main {
 		 System.out.println(vet.cheio());
 		 System.out.println(vet.tamanho());
 		 System.out.println(vet.contem(alunoTest));
+		 vet.exibe();
 	}
 
 }
