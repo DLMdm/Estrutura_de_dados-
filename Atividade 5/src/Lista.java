@@ -8,4 +8,6 @@ public interface Lista {
 	public boolean remove(Object info);
 
 	public int tamanho();
+	
+	public void imprime();
 }

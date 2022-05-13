@@ -56,4 +56,9 @@ public class LSE implements Lista {
 	cont ++;
 	return cont;
 	}
+	
+	public void imprime() {
+		for (Noh i = inicio; i != null; i = i.getProx())
+			System.out.println(i.toString() + "\n");
+	}
 }

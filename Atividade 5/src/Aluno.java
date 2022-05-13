@@ -1,38 +1,41 @@
 
 public class Aluno {
- private String nome;
- private double nota;
- private int idade;
- 
-public Aluno(String nome, double nota, int idade) {
-	this.nome = nome;
-	this.nota = nota;
-	this.idade = idade;
-}
+	private String nome;
+	private double nota;
+	private int idade;
 
-public String getNome() {
-	return nome;
-}
+	public Aluno(String nome, double nota, int idade) {
+		this.nome = nome;
+		this.nota = nota;
+		this.idade = idade;
+	}
 
-public void setNome(String nome) {
-	this.nome = nome;
-}
+	public String getNome() {
+		return nome;
+	}
 
-public double getNota() {
-	return nota;
-}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-public void setNota(double nota) {
-	this.nota = nota;
-}
+	public double getNota() {
+		return nota;
+	}
 
-public int getIdade() {
-	return idade;
-}
+	public void setNota(double nota) {
+		this.nota = nota;
+	}
 
-public void setIdade(int idade) {
-	this.idade = idade;
-}
- 
- 
+	public int getIdade() {
+		return idade;
+	}
+
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", nota=" + nota + ", idade=" + idade + "]";
+	}
 }

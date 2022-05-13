@@ -8,6 +8,7 @@ public class Main {
 		System.out.println(lista.estahVazia());
 		lista.insereInicio(al1);
 		lista.insereFim(al2);
+		lista.imprime();
 		System.out.println(lista.estahVazia());
 		System.out.println(lista.remove(al1));
 		System.out.println(lista.tamanho());

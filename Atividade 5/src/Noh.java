@@ -19,5 +19,9 @@ public class Noh {
 	public void setProx(Noh n) {
 		this.prox = n;
 	}
+	
+	public String toString() {
+		return info.toString();
+	}
 
 }
