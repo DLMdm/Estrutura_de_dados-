@@ -36,7 +36,7 @@ public class LSE implements Lista {
 	public boolean remove(Object info) {
 		Noh ant = null, p;
 		p = inicio;
-		while (p != null && p.getInfo() != info) { // busca
+		while (p != null && p.getInfo() != info) { 
 			ant = p;
 			p = p.getProx();
 		}

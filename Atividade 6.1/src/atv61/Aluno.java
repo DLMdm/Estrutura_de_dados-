@@ -1,3 +1,4 @@
+package atv61;
 
 public class Aluno {
 	private String nome;
