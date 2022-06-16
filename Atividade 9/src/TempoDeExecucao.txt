@@ -1,0 +1,16 @@
+Tipo: Numero de Valores / Tempo em ms(Valores aproximados)
+
+bubble_sort(): 10 / 1
+bubble_sort(): 100 / 2
+bubble_sort(): 1000 / 9
+bubble_sort(): 10000 / 146
+
+selection_sort(): 10 / 1
+selection_sort(): 100 / 2
+selection_sort(): 1000 / 5
+selection_sort(): 10000 / 43
+
+insertion_sort(): 10 / 1
+insertion_sort(): 100 / 2
+insertion_sort(): 1000 / 5
+insertion_sort(): 10000 / 41

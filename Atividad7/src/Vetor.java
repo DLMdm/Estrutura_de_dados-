@@ -30,7 +30,6 @@ public class Vetor {
 			return this.valor[inicio];
 		} else {
 			int meio = Math.floorDiv((inicio + fim), 2);
-			System.out.println(inicio +" "+ meio + " " +fim);
 			int maximo1 = getMax(inicio, meio);
 			int maximo2 = getMax(meio +1, fim);
 			if (maximo1 > maximo2) {
