@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Vetor {
-	private int ultVal = 0;
+	private int proxVal = 0;
 	private int valor[];
 
 	public Vetor(int tam) {
@@ -9,16 +9,16 @@ public class Vetor {
 	}
 
 	public void adiciona(int num) {
-		this.valor[ultVal] = num;
-		this.ultVal++;
+		this.valor[proxVal] = num;
+		this.proxVal++;
 	}
 
 	public int tamanho() {
-		return ultVal;
+		return proxVal;
 	}
 
 	public boolean contem(int num) {
-		for (int i = 0; i < ultVal; i++) {
+		for (int i = 0; i < proxVal; i++) {
 			if (valor[i] == num) {
 				return true;
 			}
@@ -42,7 +42,7 @@ public class Vetor {
 	}
 
 	public int buscaBinariaRec(int valorEsc) {
-		return buscaBinariaRec(valorEsc, 0, ultVal - 1);
+		return buscaBinariaRec(valorEsc, 0, proxVal - 1);
 	}
 
 	public void ordenar() {
@@ -50,8 +50,8 @@ public class Vetor {
 	}
 
 	public void bubble_sort() {
-		for (int i = 0; i < (this.ultVal - 1); i++) {
-			for (int j = 0; j < (this.ultVal - 2); j++) {
+		for (int i = 0; i < (this.proxVal - 1); i++) {
+			for (int j = 0; j < (this.proxVal - 2); j++) {
 				if (this.valor[j] > this.valor[j + 1]) {
 					int aux = this.valor[j];
 					this.valor[j] = this.valor[j + 1];
@@ -62,9 +62,9 @@ public class Vetor {
 	}
 
 	public void selection_sort() {
-		for (int i = 0; i < (this.ultVal - 1); i++) {
+		for (int i = 0; i < (this.proxVal - 1); i++) {
 			int menor = i;
-			for (int j = i + 1; j < (this.ultVal - 2); j++)
+			for (int j = i + 1; j < (this.proxVal - 2); j++)
 				if (this.valor[j] < this.valor[menor])
 					menor = j;
 			int aux = valor[i];
@@ -74,7 +74,7 @@ public class Vetor {
 	}
 
 	public void insertion_sort() {
-		for (int i = 1; i < (this.ultVal - 2); i++) {
+		for (int i = 1; i < (this.proxVal - 2); i++) {
 			int chave = this.valor[i];
 			int j = i - 1;
 			while (j >= 0 && chave < this.valor[j]) {
@@ -87,7 +87,7 @@ public class Vetor {
 
 	public int buscaBinaria(int valorEsc) {
 		int inicio = 0;
-		int fim = ultVal - 1;
+		int fim = proxVal - 1;
 		while (inicio <= fim) {
 			int meio = Math.floorDiv(inicio + fim, 2);
 			if (fim == inicio && valor[meio] != valorEsc)
